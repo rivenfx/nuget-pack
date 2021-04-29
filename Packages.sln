@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CC3D977F-8239-444A-ADFD-DDE22AE5E993}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55E51874-28F8-43CF-BFBE-338C9F4124DB}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		azure-pipelines.yml = azure-pipelines.yml
+		common.props = common.props
+		global.json = global.json
+		LICENSE = LICENSE
+		README.md = README.md
+		RELEASE_NOTES.md = RELEASE_NOTES.md
+		repository_info.props = repository_info.props
+		version.props = version.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5359754A-33EC-4FE5-B958-8EBE13CDA68F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nupkg", "nupkg", "{695A18EA-1D28-45D7-A8B4-99F971EAC627}"
+	ProjectSection(SolutionItems) = preProject
+		nupkg\common.ps1 = nupkg\common.ps1
+		nupkg\pack.ps1 = nupkg\pack.ps1
+		nupkg\push_packages.ps1 = nupkg\push_packages.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F55E25AD-0A8D-419E-803C-2818BAF27130}"
+	ProjectSection(SolutionItems) = preProject
+		main.md = main.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{195C9CA7-4EA8-4856-9E67-BDC47D23D3CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{B2CB0130-3E4C-4586-90D6-B117D62F5DF3}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build_and_publish_nuget.yml = .github\workflows\build_and_publish_nuget.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleNugetPack", "src\SampleNugetPack\SampleNugetPack.csproj", "{9743C54F-56BD-4181-8869-1E74BE57C949}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9743C54F-56BD-4181-8869-1E74BE57C949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9743C54F-56BD-4181-8869-1E74BE57C949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9743C54F-56BD-4181-8869-1E74BE57C949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9743C54F-56BD-4181-8869-1E74BE57C949}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{695A18EA-1D28-45D7-A8B4-99F971EAC627} = {55E51874-28F8-43CF-BFBE-338C9F4124DB}
+		{195C9CA7-4EA8-4856-9E67-BDC47D23D3CC} = {55E51874-28F8-43CF-BFBE-338C9F4124DB}
+		{B2CB0130-3E4C-4586-90D6-B117D62F5DF3} = {195C9CA7-4EA8-4856-9E67-BDC47D23D3CC}
+		{9743C54F-56BD-4181-8869-1E74BE57C949} = {CC3D977F-8239-444A-ADFD-DDE22AE5E993}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82681AFF-9974-4E44-B9E3-92562502F471}
+	EndGlobalSection
+EndGlobal

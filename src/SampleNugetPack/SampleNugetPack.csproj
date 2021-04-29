@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+  <Import Project="..\..\version.props" />
+  <Import Project="..\..\repository_info.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>SampleNugetPack</RootNamespace>
+    <PackageId>SampleNugetPack</PackageId>
+    <Description>SampleNugetPack</Description>
+    <AssemblyName>SampleNugetPack</AssemblyName>
+
+    <PackageTags>rivenfx;SampleNugetPack</PackageTags>
+  </PropertyGroup>
+
+</Project>

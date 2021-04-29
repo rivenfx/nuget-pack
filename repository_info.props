@@ -1,0 +1,9 @@
+<Project>
+
+  <PropertyGroup>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/rivenfx/nuget-pack</RepositoryUrl>
+    <PackageLicense>https://github.com/rivenfx/nuget-pack/blob/master/LICENSE</PackageLicense>
+  </PropertyGroup>
+    
+</Project>
